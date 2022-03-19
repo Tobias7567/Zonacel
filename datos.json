@@ -1,0 +1,65 @@
+[
+  {
+    "Nombre": "SamsungA20",
+    "imagen": "/fotocelular1.webp",
+    "precio": 60000,
+    "memoria": "124GB",
+    "color": "negro"
+  },
+  {
+    "Nombre": "Moto120",
+    "imagen": "/fotocelular2.jpg",
+    "precio": 34000,
+    "memoria": "60GB",
+    "color": "negro"
+  },
+  {
+    "Nombre": "Moto90",
+    "imagen": "/fotocelular3.webp",
+    "precio": 70000,
+    "memoria": "64GB",
+    "color": "azul"
+  },
+  {
+    "Nombre": "Moto100",
+    "imagen": "/fotocelular4.webp",
+    "precio": 80000,
+    "memoria": "124GB",
+    "color": "rosa"
+  },
+  {
+    "Nombre": "Reami50",
+    "imagen": "/fotocelular5.jpg",
+    "precio": 60000,
+    "memoria": "124GB",
+    "color": "negro"
+  },
+  {
+    "Nombre": "SamsungA50",
+    "imagen": "/fotocelular6.jpg",
+    "precio": 75000,
+    "memoria": "124GB",
+    "color": "verde"
+  },
+  {
+    "Nombre": "Samsung100",
+    "imagen": "/fotocelular7.webp",
+    "precio": 98000,
+    "memoria": "124GB",
+    "color": "negro"
+  },
+  {
+    "Nombre": "Xiaomix30",
+    "imagen": "/fotocelular8.webp",
+    "precio": 98000,
+    "memoria": "124GB",
+    "color": "negro"
+  },
+  {
+    "Nombre": "xiaomi40",
+    "imagen": "/fotocelular9.jpg",
+    "precio": 87000,
+    "memoria": "124GB",
+    "color": "azul"
+  }
+]
