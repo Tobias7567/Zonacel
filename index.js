@@ -9,17 +9,16 @@ let articulosCarrito = [];
 const URLGET = "./productos.json";
 
 $.get(URLGET, function (respuesta, estado) {
-  console.log(respuesta)
   if (estado === "success") {
     let misdatos = respuesta;
-    console.log(misdatos);
     for (const dato of misdatos) {
       $(contenedordebloque).prepend(`<div class = "Contenedordecelular">
         <h2 id="nombre"> ${dato.Nombre} </h2>
         <img src= "${dato.imagen}"></img>
-        <h3 id="precio">${dato.precio}</h3>
-        <p id = "pdeproducto">${dato.memoria}</p>
-        <p id = "pdeproducto">${dato.color}</p>
+        <div id="contenedordeprecio"><h3>$</h3>
+        <h3 id="precio">${dato.precio}</h3></div>
+        <p id = "pdeproducto">Memoria:${dato.memoria}</p>
+        <p id = "pdeproducto">Color: ${dato.color}</p>
         <button class="buttoncomprar">Comprar</button>
         </div >`);
     }
@@ -37,7 +36,8 @@ conten.addEventListener("click", eliminarCelular);
 let clic = 1;
 function mostrarcarrito() {
   if (clic == 1) {
-    carrito.style.display = "block";
+    carrito.style.display = "block"
+
     clic = clic + 1;
   } else {
     carrito.style.display = "none";

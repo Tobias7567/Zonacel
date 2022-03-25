@@ -15,25 +15,16 @@ function borrarcarrito() {
   articulosCarrito = [];
   localStorage.setItem("carrito", JSON.stringify(articulosCarrito));
 }
-function mostrarcartel() {
+function mostrarcartel(e) {
+
   if (carritoLocalStorage == "") {
+      e.preventDefault();
     Swal.fire({
       icon: "error",
       title: "Oops...",
       text: "Antes debes selecionar al menos un producto!",
     });
-  } else if (cliente.value === "") {
-    Swal.fire({
-      icon: "error",
-      title: "Oops...",
-      text: "Por favor ingresa tu nombre!",
-    });
-  } else if (correo.value === "") {
-    Swal.fire({
-      icon: "error",
-      title: "Oops...",
-      text: "Por favor ingresa tu correo!",
-    });
+
   } else {
     const btn = document.getElementById("procesar-compra");
 

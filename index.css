@@ -6,21 +6,22 @@
 }
 /*principio de nav*/
 
+
 .Navbar {
   display: flex;
-  width: 80%;
+  width: 100%;
   height: 14vh;
   align-items: center;
-  margin-left: 10%;
 
   background-color: rgb(26, 25, 25);
-  animation :fadeInDownBig ;
+  animation: fadeInDownBig;
   animation-duration: 1.5s;
   opacity: 0.9;
 }
 #adenav {
   color: rgb(255, 255, 255);
-  text-decoration: none;
+  text-decoration:overline  ;
+  letter-spacing: 3px;
 }
 .uldenav {
   display: flex;
@@ -44,7 +45,9 @@
   min-width: 300px;
   max-width: 400px;
   background-color: #ffffff;
-}
+
+
+  }
 
 .Vaciarcarrito {
   display: flex;
@@ -107,16 +110,13 @@
 /*comienzo de productos */
 
 img {
-  width: 240px;
+  width: 260px;
   height: 260px;
 }
 #contenedor {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  margin-top: 3%;
-  margin-bottom: 3%;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 340px);
+  gap: 90px;
   justify-content: center;
 }
 
@@ -130,9 +130,12 @@ img {
   justify-content: center;
   color: #212529;
 }
-#precio {
+
+#contenedordeprecio {
+  display: flex;
+  flex-direction: row;
+  margin: 0.4em 0em 0em 0em;
   font-size: 2em;
-  margin: 0.4em 0em;
 }
 #pdeproducto {
   width: 100%;
@@ -145,13 +148,15 @@ img {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: 24%;
-  height: 100%;
-  margin: 1em 2em;
   align-items: center;
   border: 2px solid rgb(156, 156, 156);
-  animation: backInLeft; 
-  animation-duration: 1.5s; 
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  animation: backInLeft;
+  animation-duration: 1.5s;
+  border-radius: 8px;
+}
+.Contenedordecelular:hover {
+  box-shadow: 0 0 10px 8px rgba(0, 0, 0, 0.2);
 }
 .buttoncomprar {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -163,6 +168,7 @@ img {
   height: 7vh;
   font-size: 1.1em;
   margin: 15px 0px;
+  border-radius: 5px;
 }
 /*fin de productos */
 /*principio de footer */
@@ -204,51 +210,23 @@ footer {
 }
 
 /*fin de compra */
-@media (max-width : 1050px) {
-  .Navbar {
-    width: 100%;
-    margin: 0%;
-  }
-  .Contenedordecelular {
-  
-    width: 35%;
-    height: 100%;
-    margin: 1em 3em;
-  }
-}
-@media (max-width: 700px)   { 
-  .Contenedordecelular {
-  
-    width: 50%;
-    margin: 1em 3em
-  
-  }
- }
-@media (max-width: 500px)   {
-  
-  .uldenav  {
+
+@media (max-width: 500px) {
+  .uldenav {
     justify-content: space-around;
     align-items: center;
     margin-top: 1%;
   }
-  .Contenedordecelular {
-  
-    width: 100%;
-    margin: 1em 2.3em
-  
-  }
+
   .Contenedordetitulos {
-    
     letter-spacing: 3px;
     font-size: 0.9em;
-
-      }
+  }
   .Contenedordetitulos h1 {
     margin-bottom: 0.8%;
     font-size: 2em;
   }
   .Contenedordetitulos h3 {
-  
     font-size: 1.2em;
   }
   #carrito {
@@ -267,7 +245,7 @@ footer {
   #listacarrito {
     width: 100%;
     display: flex;
-  
+
     justify-content: center;
     align-items: center;
   }
