@@ -36,8 +36,7 @@ conten.addEventListener("click", eliminarCelular);
 let clic = 1;
 function mostrarcarrito() {
   if (clic == 1) {
-    carrito.style.display = "block"
-
+    carrito.style.display = "block";
     clic = clic + 1;
   } else {
     carrito.style.display = "none";
